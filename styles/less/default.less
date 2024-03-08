@@ -1,12 +1,12 @@
-@import "./colors";
+@import './colors';
 
 .editor {
-
   .CodeMirror {
     // Background color of main window
     background-color: @base00;
   }
-  .CodeMirror-scroll, .CodeMirror-dialog {
+  .CodeMirror-scroll,
+  .CodeMirror-dialog {
     // Color of otherwise un-styled text
     color: @base01;
   }
@@ -60,17 +60,21 @@
     color: @base02;
   }
   .CodeMirror .CodeMirror-linewidget img.inline-widget {
-    background: rgba(0,0,0,0.1);
+    background: rgba(0, 0, 0, 0.1);
   }
   .cm-searching {
     // Ctrl + F results
-    background-color: rgba(165, 69, 67, .4);
+    background-color: rgba(165, 69, 67, 0.4);
     color: white !important;
   }
 
   /* All 'dem swatches */
 
   .CodeMirror {
+    .cm-quote {
+      color: @base0E;
+      font-style: italic;
+    }
     .cm-url {
       color: @base0F;
     }
@@ -128,15 +132,13 @@
     .cm-tag {
       color: @base0A;
     }
-    .cm-quote {
-      color: @base0E;
-      font-style: italic;
-    }
     .cm-whitespace::before {
       color: @base06;
       opacity: 0.4;
     }
-    .cm-formatting-quote, .cm-formatting-strong, .cm-formatting-em {
+    .cm-formatting-quote,
+    .cm-formatting-strong,
+    .cm-formatting-em {
       opacity: 0.6;
     }
     .cm-strong {
@@ -147,7 +149,8 @@
     }
 
     // carriage return
-    .CodeMirror-code > div > pre > span::after, .CodeMirror-line > span::after {
+    .CodeMirror-code > div > pre > span::after,
+    .CodeMirror-line > span::after {
       color: @base06;
       opacity: 0.4;
     }
@@ -161,13 +164,20 @@
       background: rgba(0, 0, 0, 0.1);
     }
 
-    .cm-table-sep, .table-row.table-row-1 {
+    .cm-table-sep,
+    .table-row.table-row-1 {
       color: @base0E;
+    }
+
+    .cm-quote.cm-link-barelink {
+      font-style: normal;
+      color: @base0A;
     }
   }
 
   /* Active Line Highlight support */
-  .CodeMirror-activeline-background, .CodeMirror-activeline-gutter {
+  .CodeMirror-activeline-background,
+  .CodeMirror-activeline-gutter {
     background-color: fade(@base02, 10%) !important;
   }
 }

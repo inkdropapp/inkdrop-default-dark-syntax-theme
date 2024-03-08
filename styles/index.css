@@ -53,6 +53,10 @@
   background-color: rgba(165, 69, 67, 0.4);
   color: white !important;
 }
+.editor .CodeMirror .cm-quote {
+  color: #cc99cc;
+  font-style: italic;
+}
 .editor .CodeMirror .cm-url {
   color: #6987AF;
 }
@@ -110,10 +114,6 @@
 .editor .CodeMirror .cm-tag {
   color: #fda331;
 }
-.editor .CodeMirror .cm-quote {
-  color: #cc99cc;
-  font-style: italic;
-}
 .editor .CodeMirror .cm-whitespace::before {
   color: #808080;
   opacity: 0.4;
@@ -144,6 +144,10 @@
 .editor .CodeMirror .cm-table-sep,
 .editor .CodeMirror .table-row.table-row-1 {
   color: #cc99cc;
+}
+.editor .CodeMirror .cm-quote.cm-link-barelink {
+  font-style: normal;
+  color: #fda331;
 }
 .editor .CodeMirror-activeline-background,
 .editor .CodeMirror-activeline-gutter {

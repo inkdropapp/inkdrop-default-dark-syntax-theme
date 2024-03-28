@@ -1,20 +1,20 @@
 .editor {
-  --base00: #2e3235;
-  --base01: #dddddd;
-  --base02: #b9d2ff;
-  --base03: #b0b0b0;
-  --base04: #d0d0d0;
-  --base05: #e0e0e0;
-  --base06: #808080;
-  --base07: #000000;
-  --base08: #a54543;
-  --base09: #fc6d24;
-  --base0A: #fda331;
-  --base0B: #8abeb7;
-  --base0C: #b5bd68;
-  --base0D: #6fb3d2;
-  --base0E: #cc99cc;
-  --base0F: #6987af;
+  --base00: hsl(206 7% 19%);
+  --base01: hsl(0 0% 87%);
+  --base02: hsl(219 100% 86%);
+  --base03: hsl(0 0% 69%);
+  --base04: hsl(0 0% 82%);
+  --base05: hsl(0 0% 88%);
+  --base06: hsl(0 0% 50%);
+  --base07: hsl(0 0% 0%);
+  --base08: hsl(1 42% 45%);
+  --base09: hsl(20 97% 56%);
+  --base0A: hsl(34 98% 59%);
+  --base0B: hsl(172 29% 64%);
+  --base0C: hsl(66 39% 57%);
+  --base0D: hsl(199 52% 63%);
+  --base0E: hsl(300 33% 70%);
+  --base0F: hsl(214 30% 55%);
 
   .CodeMirror {
     /* Background color of main window */
@@ -36,7 +36,7 @@
     }
     .CodeMirror-selected {
       /* Highlighed text */
-      background-color: var(--base06);
+      background-color: color-mix(in srgb, var(--base06), transparent 80%);
     }
     .CodeMirror-focused .CodeMirror-selected {
       /* Highlighed text */

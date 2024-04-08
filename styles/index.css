@@ -27,7 +27,7 @@
     }
     .CodeMirror-gutters {
       /* Gutter to the left */
-      background-color: transparent;
+      background-color: var(--base00);
       border-right: 1px solid rgba(255, 255, 255, 0.1);
     }
     .CodeMirror-linenumber {

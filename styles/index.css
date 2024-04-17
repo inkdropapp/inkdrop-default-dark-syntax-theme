@@ -19,6 +19,7 @@
   .CodeMirror {
     /* Background color of main window */
     background-color: var(--base00);
+    --fat-cursor-color: var(--base0C);
 
     .CodeMirror-scroll,
     .CodeMirror-dialog {

@@ -87,7 +87,8 @@
 
   /* All 'dem swatches */
 
-  .CodeMirror {
+  .CodeMirror,
+  .mde-preview .codeblock pre {
     color-scheme: dark;
 
     .cm-quote {
